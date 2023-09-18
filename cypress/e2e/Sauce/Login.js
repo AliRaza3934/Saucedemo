@@ -17,4 +17,7 @@ Given("open init login page",()=>{
 And("select another product",()=>{
     cy.get('#add-to-cart-sauce-labs-bolt-t-shirt').click()
 })
+And("select cart",()=>{
+    cy.get('#shopping_cart_container > a').click()
+})
    
