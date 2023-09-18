@@ -9,6 +9,12 @@ Given("open init login page",()=>{
    })
    
    Then("click on submit button",()=>{
-       cy.get('#login-button').click()
+       cy.get('#login-button').click().wait(3000)
    })
+   And("select the product",()=>{
+    cy.get('#add-to-cart-sauce-labs-backpack').click().wait(3000)
+})
+And("select another product",()=>{
+    cy.get('#add-to-cart-sauce-labs-bolt-t-shirt').click()
+})
    
