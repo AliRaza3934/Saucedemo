@@ -7,3 +7,4 @@ Then     click on submit button
 And      select the product 
 And      select another product 
 Then     select cart 
+Then     click on checkout
