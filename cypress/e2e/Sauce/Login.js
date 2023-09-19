@@ -24,5 +24,32 @@ Then("click on checkout",()=>{
     cy.get('#checkout').click()
      
 })
+Then("type first name",()=>{
+    cy.get('#first-name').type('Ali')
+     
+})
+Then("type last name",()=>{
+    cy.get('#last-name').type('Raza')
+     
+})
+Then("type zip code",()=>{
+    cy.get('#postal-code').type('38678')
+     
+})
+Then("click on continue",()=>{
+    cy.get('#continue').click()
+     
+})
+And("click on finish",()=>{
+    cy.get('#finish').click()
+     
+})
+And("click on backhome",()=>{
+    cy.get('#back-to-products').click()
+     
+})
+
+
+
 
    
